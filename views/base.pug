@@ -1,0 +1,22 @@
+//- base.pug/layout.pug
+doctype html
+html
+  head
+    title My Site - Prasad Dance Academy
+    block scripts
+    block style 
+  body
+    nav#navbar.top.firstClass.secondClass 
+       ul 
+            div#logo
+                img(src="/static/img/logo.png")
+                | PDA
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Sevices]
+            li #[a(href="/") Class Info]
+            li #[a(href="/contact") Contact]
+
+    block content
+    footer#footer 
+        | Copyright  &copy; 2021 PrasadDanceAcademy.com | All rights reserved 
