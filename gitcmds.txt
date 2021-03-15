@@ -1,0 +1,20 @@
+git config --global user.name name
+git config --global user.email "name@gmail.com
+touch .gitignore
+git init
+git add .
+git commit -m "Initial commit"
+git status (#Just to See)
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+cat <Path to id_rsa.pub>  #Add this key to your GitHub Account
+git remote add origin  <ssh url.git>
+git push origin master
+
+
+------------------------------------------
+To Add files to git or update file to git
+cmds:
+git add .
+git commit-m "Added gitcmds.txt"
+git push origin master
+
