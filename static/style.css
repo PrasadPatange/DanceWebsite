@@ -1,5 +1,4 @@
 /* CSS RESET */
-/* faltu che gaps kadte /pareshn nahi karte*/
 
 @import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=RocknRoll+One&display=swap');
 
@@ -33,6 +32,7 @@
     /* Sticky navbar at top */
     top: 0px;
     position: sticky;
+    display: flex;
 }
 #navbar ul{
     display:flex;
@@ -109,7 +109,7 @@
 
 .card{
     background-color: #f3f3f3;
-    display: inline-block;/*Ek line mdhe yenar*/
+    display: inline-block;         /*Ek line mdhe yenar*/
     /* border: 1px solid black; */
     border-radius: 10px;
     width: 30%;
@@ -201,4 +201,64 @@
 
 
 
+}
+
+
+@media only screen and (max-width:1350px) {
+    #navbar {
+      
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .card{
+        background-color: #f3f3f3;
+        display:inline-block;         /*Ek line mdhe yenar*/
+        /* border: 1px solid black; */
+        border-radius: 5px;
+        width: 20%;
+        margin: 13px 7px;
+        height: 160px;
+        box-shadow:7px 7px 2px black;
+        align-items: center;
+        
+      
+      }
+      card h3{
+        color: navy;
+        font-weight: bold;
+        font-size: 10px;
+        text-align: center;
+        margin: 6px;
+        font-family: Arial, Helvetica, sans-serif;
+    
+    }
+    
+    .card-box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .card-img{
+        height:25px; 
+        padding: 0 25px;
+        margin: 2px 3px;
+    
+    }
+    .card-img img{
+        height: inherit; /*card chya at janar image*/ 
+       
+    
+    }
+    .card-content{
+        padding: 0 5px;
+    }
+    
+    .card-content p{
+        font-weight: bold;
+        padding: 0 5px;
+        font-size: 10px;
+    
+    
+    }
 }
